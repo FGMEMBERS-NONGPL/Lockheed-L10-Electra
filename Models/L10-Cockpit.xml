@@ -1,0 +1,1178 @@
+<PropertyList>
+
+	<path>Lockheed-L10-Cockpit.ac</path>
+
+	<model>
+		<path>L10-Instruments.xml</path>
+	</model>
+
+<!-- Yoke -->
+	<animation>
+		<type>rotate</type>
+		<object-name>Yoke</object-name>
+		<object-name>YokeWheelL</object-name>
+		<object-name>YokeWheelR</object-name>
+		<property>controls/flight/elevator-input</property>
+		<factor>-15</factor>
+		<center>
+			<x-m> 1.860</x-m>
+			<y-m>-0.643</y-m>
+			<z-m>-0.425</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>YokeWheelL</object-name>
+		<property>controls/flight/aileron-input</property>
+		<factor>-90</factor>
+		<center>
+			<x-m> 1.890</x-m>
+			<y-m>-0.375</y-m>
+			<z-m> 0.175</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>YokeWheelR</object-name>
+		<property>controls/flight/aileron-input</property>
+		<factor>-90</factor>
+		<center>
+			<x-m> 1.890</x-m>
+			<y-m> 0.375</y-m>
+			<z-m> 0.175</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- Rudder -->
+	<!-- 	left pedals -->
+	<animation>
+		<type>rotate</type>
+		<object-name>RudderPLl.001</object-name>
+		<object-name>RudderPRl.001</object-name>
+		<object-name>RudderPLl</object-name>
+		<object-name>RudderPRl</object-name>
+		<property>controls/flight/rudder-input</property>
+		<factor>-12.5</factor>
+		<center>
+			<x-m> 1.593</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>-0.055</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>RudderPLl</object-name>
+		<object-name>RudderPRl</object-name>
+		<property>controls/flight/rudder-input</property>
+		<factor>12.5</factor>
+		<center>
+			<x-m> 1.629</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>-0.341</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<!-- 	right pedals -->
+	<animation>
+		<type>rotate</type>
+		<object-name>RudderPLr.001</object-name>
+		<object-name>RudderPRr.001</object-name>
+		<object-name>RudderPLr</object-name>
+		<object-name>RudderPRr</object-name>
+		<property>controls/flight/rudder-input</property>
+		<factor>12.5</factor>
+		<center>
+			<x-m> 1.629</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>-0.08</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>RudderPLr</object-name>
+		<object-name>RudderPRr</object-name>
+		<property>controls/flight/rudder-input</property>
+		<factor>-12.5</factor>
+		<center>
+			<x-m> 1.629</x-m>
+			<y-m>-0.0</y-m>
+			<z-m>-0.341</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!-- 	Throttles -->
+	<!-- 	    Left -->
+	<animation>
+		<type>rotate</type>
+		<object-name>ThrottleL</object-name>
+		<property>controls/engines/engine[0]/throttle</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-58.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>ThrottleL</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/throttle</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/throttle</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/throttle</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/throttle</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	Right -->
+	<animation>
+		<type>rotate</type>
+		<object-name>ThrottleR</object-name>
+		<property>controls/engines/engine[1]/throttle</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-58.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>ThrottleR</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/throttle</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/throttle</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/throttle</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/throttle</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+<!-- 	PropPitch -->
+	<!-- 	    Left -->
+	<animation>
+		<type>rotate</type>
+		<object-name>PitchL</object-name>
+		<property>controls/engines/engine[0]/propeller-pitch</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-65.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>PitchL</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/propeller-pitch</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/propeller-pitch</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/propeller-pitch</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/propeller-pitch</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	Right -->
+	<animation>
+		<type>rotate</type>
+		<object-name>PitchR</object-name>
+		<property>controls/engines/engine[1]/propeller-pitch</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-65.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>PitchR</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/propeller-pitch</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/propeller-pitch</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/propeller-pitch</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/propeller-pitch</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+<!-- 	Mixture -->
+	<!-- 	    Left -->
+	<animation>
+		<type>rotate</type>
+		<object-name>MixL</object-name>
+		<property>controls/engines/engine[0]/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-65.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>MixL</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/mixture</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/mixture</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/mixture</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[0]/mixture</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	Right -->
+	<animation>
+		<type>rotate</type>
+		<object-name>MixR</object-name>
+		<property>controls/engines/engine[1]/mixture</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-65.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.653</x-m>
+			<y-m>-0.106</y-m>
+			<z-m>-0.083</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>MixR</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/mixture</property>
+				<step>0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/mixture</property>
+				<step>-0.05</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/mixture</property>
+				<step>0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/engines/engine[1]/mixture</property>
+				<step>-0.1</step>
+				<min>0</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	CarbHeat -->
+	<!-- 	    Left -->
+	<animation>
+		<type>rotate</type>
+		<object-name>CarbHeatL</object-name>
+		<property>controls/anti-ice/engine[0]/carb-heat</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-68.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.672</x-m>
+			<y-m> 0.000</y-m>
+			<z-m>-0.189</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>CarbHeatL</object-name>
+		<visible>true</visible>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/anti-ice/engine[0]/carb-heat</property>
+				<value type="bool">true</value>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/anti-ice/engine[0]/carb-heat</property>
+				<value type="bool">false</value>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	    Left -->
+	<animation>
+		<type>rotate</type>
+		<object-name>CarbHeatR</object-name>
+		<property>controls/anti-ice/engine[1]/carb-heat</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-68.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.672</x-m>
+			<y-m> 0.000</y-m>
+			<z-m>-0.189</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>CarbHeatR</object-name>
+		<visible>true</visible>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/anti-ice/engine[1]/carb-heat</property>
+				<value type="bool">true</value>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-assign</command>
+				<property>controls/anti-ice/engine[1]/carb-heat</property>
+				<value type="bool">false</value>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	Gear Lever-->
+	<animation>
+		<type>rotate</type>
+		<object-name>GearLev</object-name>
+		<property>controls/gear/gear-down</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-68.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.672</x-m>
+			<y-m> 0.000</y-m>
+			<z-m>-0.189</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>GearLev</object-name>
+		<action>
+			<name>GearToggle</name>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/gear/gear-down</property>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- 	Flaps Lever-->
+	<animation>
+		<type>rotate</type>
+		<object-name>FlapsLev</object-name>
+		<property>controls/flight/flaps</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>    0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>-68.5</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.672</x-m>
+			<y-m> 0.000</y-m>
+			<z-m>-0.189</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>FlapsLev</object-name>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>controls.flapsDown(1)</script>
+			</binding>
+			<mod-up>
+				<binding>
+					<command>nasal</command>
+					<script>controls.flapsDown(0)</script>
+				</binding>
+			</mod-up>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>controls.flapsDown(-1)</script>
+			</binding>
+			<mod-up>
+				<binding>
+					<command>nasal</command>
+					<script>controls.flapsDown(0)</script>
+				</binding>
+			</mod-up>
+		</action>
+	</animation>
+
+<!-- Rudder Trim -->
+	<!-- 	Right -->
+	<animation>
+		<type>rotate</type>
+		<object-name>RTrim</object-name>
+		<property>controls/flight/rudder-trim</property>
+		<factor>360</factor>
+		<center>
+			<x-m> 1.737</x-m>
+			<y-m>-0.349</y-m>
+			<z-m>-0.146</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>RTrim</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>-0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>-0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- Elevator Trim -->
+	<animation>
+		<type>rotate</type>
+		<object-name>ElevTrim</object-name>
+		<property>controls/flight/elevator-trim</property>
+		<factor>360</factor>
+		<center>
+			<x-m>2.154</x-m>
+			<y-m>0.000</y-m>
+			<z-m>0.693</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>ElevTrim</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>-0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/elevator-trim</property>
+				<step>-0.005</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- BrakeR -->
+	<animation>
+		<type>rotate</type>
+		<object-name>BrakeR</object-name>
+		<condition>
+			<greater-than-equals>
+				<property>controls/gear/brake-left</property>
+				<property>controls/gear/brake-right</property>
+			</greater-than-equals>
+		</condition>
+		<property>controls/gear/brake-left</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>  0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep> 36</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.743</x-m>
+			<y-m>-0.000</y-m>
+			<z-m>-0.434</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>BrakeR</object-name>
+		<condition>
+			<greater-than>
+				<property>controls/gear/brake-right</property>
+				<property>controls/gear/brake-left</property>
+			</greater-than>
+		</condition>
+		<property>controls/gear/brake-right</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>  0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep> 36</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.743</x-m>
+			<y-m>-0.000</y-m>
+			<z-m>-0.434</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+<!--	<animation>
+		<type>rotate</type>
+		<object-name>BrakeR</object-name>
+		<property>controls/gear/brake-right</property>
+		<interpolation>
+			<entry>		<ind>0</ind>	<dep>  0</dep>	</entry>
+			<entry>		<ind>1</ind>	<dep> 36</dep>	</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.743</x-m>
+			<y-m>-0.000</y-m>
+			<z-m>-0.584</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+        </animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>BrakeR</object-name>
+		<property>controls/gear/brake-parking</property>
+		<interpolation>
+			<entry>		<ind>0</ind>	<dep>  0</dep>	</entry>
+			<entry>		<ind>1</ind>	<dep> 36</dep>	</entry>
+		</interpolation>
+		<center>
+			<x-m> 1.743</x-m>
+			<y-m>-0.000</y-m>
+			<z-m>-0.584</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+        </animation>-->
+
+	<!--<animation>
+		<type>pick</type>
+		<object-name>RTrim</object-name>
+		<visible>true</visible>
+		<action>
+			<name>small increase (scrollwheel)</name>
+			<button>3</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>0.01</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>small decrease (scrollwheel)</name>
+			<button>4</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>-0.01</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Increase</name>
+			<button>0</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>0.1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+		<action>
+			<name>Decrease</name>
+			<button>1</button>
+			<repeatable>true</repeatable>
+			<binding>
+				<command>property-adjust</command>
+				<property>controls/flight/rudder-trim</property>
+				<step>-0.1</step>
+				<min>-1</min>
+				<max>1</max>
+				<wrap>0</wrap>
+			</binding>
+		</action>
+        </animation>-->
+
+</PropertyList>

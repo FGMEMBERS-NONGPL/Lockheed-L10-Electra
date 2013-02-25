@@ -1,0 +1,68 @@
+<PropertyList>
+
+<!-- TOP ROW -->
+	<model>
+		<path>Instruments/ASI/ASI.xml</path>
+		<offsets>
+			<x-m> 1.538</x-m>
+			<y-m>-0.405</y-m>
+			<z-m> 0.201</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Instruments/vsi/vsi.xml</path>
+		<offsets>
+			<x-m> 1.533</x-m>
+			<y-m>-0.135</y-m>
+			<z-m> 0.240</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+<!-- MIDDLE ROW -->
+	<model>
+		<path>Instruments/alt/alt.xml</path>
+		<offsets>
+			<x-m> 1.549</x-m>
+			<y-m>-0.485</y-m>
+			<z-m> 0.118</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Instruments/RPM/RPM-l.xml</path>
+		<offsets>
+			<x-m> 1.545</x-m>
+			<y-m> 0.045</y-m>
+			<z-m> 0.141</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Instruments/RPM/RPM-r.xml</path>
+		<offsets>
+			<x-m> 1.545</x-m>
+			<y-m> 0.135</y-m>
+			<z-m> 0.141</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+<!-- LOWER ROW -->
+	<model>
+		<path>Instruments/turn-slip/turn-slip.xml</path>
+		<offsets>
+			<x-m> 1.557</x-m>
+			<y-m>-0.225</y-m>
+			<z-m> 0.039</z-m>
+			<pitch-deg>-6.644</pitch-deg>
+		</offsets>
+	</model>
+
+
+
+</PropertyList>
