@@ -1,5 +1,6 @@
-Released under GPL v2.0
-(c) 2011 emilian huminiuc, emilianh(at)gmail(dot)com
+(c) 2011-2015 emilian huminiuc, emilianh(at)gmail(dot)com
+
+for license information see COPYING file
 ____________________________________________________________
 ============================================================
 
