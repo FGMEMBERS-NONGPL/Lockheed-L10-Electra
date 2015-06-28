@@ -3,21 +3,21 @@
 	<path>Lockheed-L10-interior.ac</path>
 
 	<effect>
-		<inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_glass</inherits-from>
+		<inherits-from>Models/Effects/l10_reflect_int</inherits-from>
 		<object-name>Seats_chrome</object-name>
 		<object-name>Drapes_line</object-name>
 		<object-name>Cube.002</object-name>
 	</effect>
 <!-- 	opaque objects -->
-<!--	<effect>
-		<inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_opaque</inherits-from>
+	<effect>
+		<inherits-from>Models/Effects/l10_model_opaque</inherits-from>
 		<object-name>AirCon</object-name>
 		<object-name>Fuselage.008</object-name>
 		<object-name>Fuselage.009</object-name>
 		<object-name>Padding</object-name>
 		<object-name>Plane</object-name>
 		<object-name>Seats</object-name>
-	</effect>-->
+	</effect>
 
 <!-- 	transparent objects -->
 	<effect>

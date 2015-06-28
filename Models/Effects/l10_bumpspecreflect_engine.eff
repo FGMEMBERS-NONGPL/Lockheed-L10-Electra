@@ -18,10 +18,10 @@
 			<wrap-t>repeat</wrap-t>
 			<internal-format>normalized</internal-format>
 		</texture>
-		<reflection_rainbow type="float">0.01</reflection_rainbow>
-		<reflection_fresnel type="float">0.0</reflection_fresnel>
-		<reflection_noise type="float">0.02</reflection_noise>
-		<reflection_correction type="float">0.5</reflection_correction>
-		<ambient_correction type="float">0.1</ambient_correction>
+		<reflection-rainbow type="float">0.01</reflection-rainbow>
+		<reflection-fresnel type="float">0.0</reflection-fresnel>
+		<reflection-noise type="float">0.02</reflection-noise>
+		<reflection-correction type="float">0.5</reflection-correction>
+		<ambient-correction type="float">0.1</ambient-correction>
 	</parameters>
 </PropertyList>

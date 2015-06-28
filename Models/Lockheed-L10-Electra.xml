@@ -2,17 +2,17 @@
 
     <path>Lockheed-L10.ac</path>
 
-    <model>
+<!--    <model>
         <path>L10-Interior.xml</path>
     </model>
 
     <model>
         <path>L10-Cockpit.xml</path>
-    </model>
+    </model>-->
 
     <!-- EFFECTS -->
     <effect>
-        <inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_glass</inherits-from>
+        <inherits-from>Models/Effects/l10_glass</inherits-from>
         <object-name>Glass</object-name>
         <object-name>NoseGlass</object-name>
         <object-name>Windshield</object-name>
@@ -42,7 +42,7 @@
     </animation>
 
     <effect>
-        <inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_bumpspecreflect</inherits-from>
+        <inherits-from>Models/Effects/l10_bumpspecreflect</inherits-from>
         <object-name>Fuselage</object-name>
         <object-name>Wing</object-name>
         <object-name>Hstab</object-name>
@@ -58,7 +58,7 @@
     </effect>
 
     <effect>
-       <inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_bumpspecreflect_cowl</inherits-from>
+       <inherits-from>Models/Effects/l10_bumpspecreflect_cowl</inherits-from>
        <object-name>Cowling</object-name>
        <object-name>Exhaust</object-name>
     </effect>
@@ -81,7 +81,7 @@
     </animation>
 
     <effect>
-        <inherits-from>Aircraft/Lockheed-L10-Electra/Models/Effects/l10_bumpspecreflect_gear</inherits-from>
+        <inherits-from>Models/Effects/l10_bumpspecreflect_gear</inherits-from>
         <object-name>GearActL</object-name>
         <object-name>GearStrutUL</object-name>
         <object-name>GearStrutLL</object-name>
@@ -98,7 +98,7 @@
 
     <!-- ENGINES -->
     <model>
-        <path>Aircraft/Lockheed-L10-Electra/Models/Engines/wasp-jr-SB/engine-left.xml</path>
+        <path>Models/Engines/wasp-jr-SB/engine-left.xml</path>
         <offsets>
             <x-m>0.815</x-m>
             <y-m>-2.10</y-m>
@@ -108,7 +108,7 @@
     </model>
 
     <model>
-        <path>Aircraft/Lockheed-L10-Electra/Models/Engines/wasp-jr-SB/engine-right.xml</path>
+        <path>Models/Engines/wasp-jr-SB/engine-right.xml</path>
         <offsets>
             <x-m>0.815</x-m>
             <y-m> 2.10</y-m>

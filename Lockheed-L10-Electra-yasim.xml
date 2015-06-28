@@ -54,7 +54,7 @@ Oil tank: 68l (18 US gal)
 
 <!-- Weight of everything but fuel
     FIXME:Provide PAX and Baggage settings and weights-->
-<airplane mass="8530">
+<airplane mass="8530" version="YASIM_VERSION_32">
 
 
 <!-- Approach configuration (AOA guestimate) glide-angle="5.25" glide-angle="3.6"-->
@@ -150,6 +150,7 @@ Oil tank: 68l (18 US gal)
 		taper="0.383"
 		twist="0"
 		camber="0.247"
+		idrag=".93"
 		>
 		<stall  aoa="15" width="24" peak="10.98"/>
 		<flap0  start="0.01" end="0.53" lift="3.1" drag="3.2"/>
@@ -174,6 +175,7 @@ Oil tank: 68l (18 US gal)
 		taper="0.675"
 		twist="0"
 		camber="0.307"
+		idrag="0.8"
 		>
 		<stall aoa="9.5" width="18.5" peak="21.7"/>
 		<flap0  start="0" end="1" lift="3" drag="3"/>
@@ -190,11 +192,11 @@ Oil tank: 68l (18 US gal)
 		incidence="0"
 		sweep="4"
 		taper="0.6"
-
+		idrag="1.05"
 		>
 		<stall aoa="12" width="14.5" peak="18.75"/>
 <!-- 		<stall aoa="9" width="32" peak="7.6"/> -->
-		<flap0 start="0.08" end="0.86" lift="17.5" drag="1.1"/>
+		<flap0 start="0.08" end="0.86" lift="16.3" drag="1.2"/>
 		<control-input  axis="/controls/flight/elevator-input" control="FLAP0"/>
 		<control-input  axis="/controls/flight/elevator-trim" control="FLAP0"/>
 		<control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>

@@ -14,7 +14,7 @@
 	    <instrumentation>alpha</instrumentation>
 	    <procedures>alpha</procedures>
 	    <system-modeling>early-alpha</system-modeling>
-            <failure-modeling>early-alpha</failure-modeling>
+		<failure-modeling>early-alpha</failure-modeling>
 	    <checklist-support>alpha</checklist-support>
 	    <tutorial-support>alpha</tutorial-support>
 	    <documentation>early-alpha</documentation>
@@ -26,14 +26,35 @@
 		<author>Emilian Huminiuc</author>
 		<status>alpha</status>
 		<version>0.1</version>
+		<rating>
+			<FDM type="int">2</FDM>
+			<systems type="int">1</systems>
+			<cockpit type="int">1</cockpit>
+			<model type="int">3</model>
+		</rating>
 		<startup>
 			<splash-texture>Aircraft/Lockheed-L10-Electra/splash.png</splash-texture>
 		</startup>
+
+		<airport>
+			<runways>
+				<start-offset-m>16</start-offset-m>
+			</runways>
+		</airport>
+
 		<model>
-			<path>Aircraft/Lockheed-L10-Electra/Models/Lockheed-L10-Electra.xml</path>
+			<path>Models/Lockheed-L10-Electra.xml</path>
 			<livery>
 				<file type="string">default</file>
 			</livery>
+		</model>
+		<model>
+			<usage>interior</usage>
+			<path>Models/L10-Cockpit.xml</path>
+		</model>
+		<model>
+			<usage>interior</usage>
+			<path>Models/L10-Interior.xml</path>
 		</model>
 		<fuel-fraction>1.0</fuel-fraction>
 		<virtual-cockpit archive="y">true</virtual-cockpit>
