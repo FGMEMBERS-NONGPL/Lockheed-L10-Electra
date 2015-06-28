@@ -12,3 +12,10 @@ ____________________________________________________________
 Please rename the extracted folder to:
 
 Lockheed-L10-Electra
+
+	DISCLAIMER
+
+	"Lockheed" "Lockheed Model 10 Electra" logos and designs are properties of Lockheed-Martin.
+	Emilian Huminiuc has no relationship with Lockheed-Martin.
+	Use the mod at your own risk. The Author will not be taken responsible for losses or damages resulting from the use of this mod.
+
