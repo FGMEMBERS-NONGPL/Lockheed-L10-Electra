@@ -442,8 +442,8 @@
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/electrical.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/smoothanim.nas</file>-->
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/input.nas</file>
-			<!--<file>Aircraft/Lockheed-L10-Electra/Nasal/viewpoint.nas</file>
-			<file>Aircraft/Lockheed-L10-Electra/Nasal/hydraulics.nas</file>
+<!-- 			<file>Aircraft/Lockheed-L10-Electra/Nasal/viewpoint.nas</file> -->
+			<!--<file>Aircraft/Lockheed-L10-Electra/Nasal/hydraulics.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/engine_management.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/weapons.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/failure.nas</file>-->
