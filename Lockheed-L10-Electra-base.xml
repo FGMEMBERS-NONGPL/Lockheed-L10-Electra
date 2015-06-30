@@ -1,8 +1,7 @@
 <!--
     ************************************************************************
-    Intreprinderea Aeronautica Brasov
     Lockheed-L10-Electra
-    2009-2010 Emilian Huminiuc - GNU-GPL v2
+    2009-2015 Emilian Huminiuc - GNU-GPL v2
     ************************************************************************
   -->
 <PropertyList>
@@ -25,7 +24,7 @@
 	<sim>
 		<author>Emilian Huminiuc</author>
 		<status>alpha</status>
-		<version>0.1</version>
+		<version>0.35</version>
 		<rating>
 			<FDM type="int">2</FDM>
 			<systems type="int">1</systems>
@@ -84,6 +83,12 @@
 		<instrumentation>
 			<path>Aircraft/Lockheed-L10-Electra/Systems/Lockheed-L10-Electra-instrumentation.xml</path>
 		</instrumentation>-->
+		<systems>
+			<property-rule n="100">
+				<name>L10 Interpolation Rules</name>
+				<path>Systems/L10-propertyrules.xml</path>
+			</property-rule>
+		</systems>
 		<rendering>
 			<redout>
 				<enabled type="bool">true</enabled>
@@ -436,8 +441,8 @@
 	<nasal>
 		<Lockheed-L10-Electra>
 			<!--<file>Aircraft/Lockheed-L10-Electra/Nasal/setup.nas</file>-->
-			<file>Aircraft/Lockheed-L10-Electra/Nasal/jwarbirds.nas</file>
-			<file>Aircraft/Lockheed-L10-Electra/Nasal/l10.nas</file>
+<!-- 			<file>Aircraft/Lockheed-L10-Electra/Nasal/jwarbirds.nas</file> -->
+<!-- 			<file>Aircraft/Lockheed-L10-Electra/Nasal/l10.nas</file> -->
 			<!--<file>Aircraft/Lockheed-L10-Electra/Nasal/liveries.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/electrical.nas</file>
 			<file>Aircraft/Lockheed-L10-Electra/Nasal/smoothanim.nas</file>-->

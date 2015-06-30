@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+    <filter n="10001">
+        <name>L10Interpolator:left_gear_extension</name>
+        <type>noise-spike</type>
+        <max-rate-of-change>0.05</max-rate-of-change>
+        <input>controls/gear/gear-down</input>
+		<output>gear/gear[0]/position-norm</output>
+    </filter>
+	<filter n="10002">
+		<name>L10Interpolator:right_gear_extension</name>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.06</max-rate-of-change>
+		<input>controls/gear/gear-down</input>
+		<output>gear/gear[1]/position-norm</output>
+	</filter>
+</PropertyList>
