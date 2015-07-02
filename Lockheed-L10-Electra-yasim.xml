@@ -2,54 +2,11 @@
 
 <!--
 ***************************************************************************
-Intreprinderea Aeronautica Romana Brasov IAR-80(A) (6mg variant)
-Tail-numbers:176-181
+Lockheed L10 "Electra", A variant
+
 Author:  Emilian Huminiuc
-Version: 0.61803
+Version: 0.35
 ***************************************************************************
-
-***************************************************************************
-Engine: I.A.R.-14 K IV 1000A1
-Spec: 1050 hp @ 2300 rpm
-Takeoff power: 950 hp
-Maximum power: 1000 hp @ 3200 m
-Bore: 145 mm
-Stroke: 165 mm
-Displacement: 38.67 L
-Engine weight: 705.17 kg
-***************************************************************************
-Performance
-Maximum speed: 485 km/h (261.9 kt, 301.4 mph) @ 5000 m
-Never exceed speed: 660 km/h (356 kt, 410 mph) @ 4550 m (14927 ft)
-Rate of climb: 12.2 m/s
-Wing loading: 171.5 kg/sq m
-Power weight ratio: 0.36 hp/kg
-Range: 730 km @ 4500m (394 nmi, 453mi); 1h50m flight time
-Service Ceiling: 10500 m (34450 ft)
-
-Landing speed:  ~100 kts
-Takeoff speed:  ~110 kts
-
-Climbing time:
-5000m....5'50"
-
-***************************************************************************
-Propeller: VDM 9-11131 V1  3 blade propeller (with electrical manual variable pitch)
-Diameter: 3.0m
-
-***************************************************************************
-Armament:
-2 x Browning FN 13.2mm (300 rounds)
-4 x Browning FN 7.92mm (1600 rounds)
-
-
-***************************************
-Weight:
-Empty : 2,125 kg
-Loaded: 2,750 kg
-*********************************
-Fuel capacity: 455L (120 US gal)
-Oil tank: 68l (18 US gal)
 -->
 
 <!-- Weight of everything but fuel
