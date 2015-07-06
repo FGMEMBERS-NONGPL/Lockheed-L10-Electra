@@ -582,7 +582,7 @@
 			<max-dist>10</max-dist>
 		</flap>
 <!-- CANOPY -->
-		<canopyL>
+		<!--<canopyL>
 			<name>canopy-openl</name>
 			<mode>in-transit</mode>
 			<path>Aircraft/Lockheed-L10-Electra/Sounds/canopy-slide.wav</path>
@@ -614,7 +614,7 @@
 			</position>
 			<reference-dist>2</reference-dist>
 			<max-dist>5</max-dist>
-		</canopyR>
+		</canopyR>-->
 <!-- WIND -->
 		<wind>
 			<name>wind</name>
@@ -1088,7 +1088,7 @@
 			<max-dist>5</max-dist>
 		</click>
 <!-- GUNS -->
-                <guns>
+               <!-- <guns>
                         <name>gunfirel1</name>
                         <mode>looped</mode>
                         <path>Aircraft/Lockheed-L10-Electra/Sounds/gunfire_1.wav</path>
@@ -1219,7 +1219,7 @@
                             <max>0.5</max>
                         </volume>
 			<reference-dist>50</reference-dist>
-                </guns>
+                </guns>-->
 
 <!-- 		MANUAL PUMP -->
 		<squish>
