@@ -18,28 +18,36 @@
 				<level-gal_us>16</level-gal_us>
 				<selected type="bool">true</selected>
 			</tank>
-			<tank n="3">
+			<tank n="2">
 				<level-gal_us>102</level-gal_us>
 				<!--<selected type="bool">true</selected>-->
 			</tank>
-			<tank n="4">
+			<tank n="3">
 				<level-gal_us>81</level-gal_us>
 				<selected type="bool">true</selected>
 			</tank>
-			<tank n="5">
+			<tank n="4">
 				<level-gal_us>16</level-gal_us>
 				<selected type="bool">true</selected>
 			</tank>
-			<tank n="6">
+			<tank n="5">
 				<level-gal_us>102</level-gal_us>
 				<!--<selected type="bool">true</selected>-->
 			</tank>
-			<tank n="8">
+			<tank n="6">
 				<level-gal_us>118</level-gal_us>
 				<!--<selected type="bool">true</selected>-->
 			</tank>
-			<tank n="9">
+			<tank n="7">
 				<level-gal_us>118</level-gal_us>
+				<!--<selected type="bool">true</selected>-->
+			</tank>
+			<tank n="8">
+				<level-gal_us>149</level-gal_us>
+				<!--<selected type="bool">true</selected>-->
+			</tank>
+			<tank n="9">
+				<level-gal_us>149</level-gal_us>
 				<!--<selected type="bool">true</selected>-->
 			</tank>
 			<tank n="10">
@@ -47,14 +55,6 @@
 				<!--<selected type="bool">true</selected>-->
 			</tank>
 			<tank n="11">
-				<level-gal_us>149</level-gal_us>
-				<!--<selected type="bool">true</selected>-->
-			</tank>
-			<tank n="12">
-				<level-gal_us>149</level-gal_us>
-				<!--<selected type="bool">true</selected>-->
-			</tank>
-			<tank n="13">
 				<level-gal_us>70</level-gal_us>
 				<!--<selected type="bool">true</selected>-->
 			</tank>
