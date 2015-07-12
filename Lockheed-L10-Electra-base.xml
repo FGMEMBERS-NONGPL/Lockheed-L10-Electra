@@ -41,20 +41,6 @@
 			</runways>
 		</airport>
 
-		<model>
-			<path>Models/Lockheed-L10-Electra.xml</path>
-			<livery>
-				<file type="string">default</file>
-			</livery>
-		</model>
-		<model>
-			<usage>interior</usage>
-			<path>Models/L10-Cockpit.xml</path>
-		</model>
-		<model>
-			<usage>interior</usage>
-			<path>Models/L10-Interior.xml</path>
-		</model>
 		<fuel-fraction>1.0</fuel-fraction>
 		<virtual-cockpit archive="y">true</virtual-cockpit>
 		<allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>

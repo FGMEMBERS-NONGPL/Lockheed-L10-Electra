@@ -7,5 +7,21 @@
 		<description>Lockheed L10 Electra</description>
 		<flight-model>yasim</flight-model>
 		<aero>Lockheed-L10-Electra-yasim</aero>
+
+		<model>
+			<path>Models/Lockheed-L10-Electra.xml</path>
+			<livery>
+				<file type="string">default</file>
+			</livery>
+		</model>
+		<model>
+			<usage>interior</usage>
+			<path>Models/L10-Cockpit.xml</path>
+		</model>
+		<model>
+			<usage>interior</usage>
+			<path>Models/L10-Interior.xml</path>
+		</model>
+
 	</sim>
 </PropertyList>
